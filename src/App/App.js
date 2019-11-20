@@ -91,13 +91,13 @@ class App extends Component {
     }
 
     render() {
+        const value = {
+            folders: this.state.folders,
+            notes: this.state.notes
+        };
         return (
-            <UserContext.Provider value ={{
-                folders: this.state.folders,
-                notes: this.state.notes,
-                setFolders: folders => this.setState({folders}),
-                setNotes: notes => this.setState({notes})
-            }}>
+            <UserContext.Provider value={value}>
+               
             <div className="App">
                 <nav className="App__nav">{this.renderNavRoutes()}</nav>
                 <header className="App__header">
