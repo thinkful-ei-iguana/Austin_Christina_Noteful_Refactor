@@ -94,6 +94,7 @@ class App extends Component {
         const value = {
             folders: this.state.folders,
             notes: this.state.notes
+            
         };
         return (
             <UserContext.Provider value={value}>
