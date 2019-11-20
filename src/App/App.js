@@ -8,7 +8,7 @@ import NotePageMain from '../NotePageMain/NotePageMain';
 import dummyStore from '../dummy-store';
 import {getNotesForFolder, findNote, findFolder} from '../notes-helpers';
 import './App.css';
-import UserContext from './Contexts';
+import UserContext from '../Contexts';
 
 class App extends Component {
     state = {
